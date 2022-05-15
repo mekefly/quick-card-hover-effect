@@ -7,6 +7,8 @@
 ![](./doc/img/2022-05-15_14:05_1_select.png)
 ![](./doc/img/2022-05-15_14:05_select.png)
 
+## [预览](https://mekefly.github.io/quick-card-hover-effect/src/index.html)
+
 ## Quick Start
 
 1. 克隆
