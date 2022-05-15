@@ -1,0 +1,19 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@wormery/wtsc': 2.0.0-bate.38
+
+dependencies:
+  '@wormery/wtsc': 2.0.0-bate.38
+
+packages:
+
+  /@wormery/utils/1.0.1:
+    resolution: {integrity: sha512-VsSPnBpN+i+Zs9kr4cgiSvnjaR17g84HlA+ygJyiOFKWTakyY6rW1LfdEFl1TAIWFHCKBr9CpmreZYuGs5yBUg==}
+    dev: false
+
+  /@wormery/wtsc/2.0.0-bate.38:
+    resolution: {integrity: sha512-VSR5jGuFuWsoqEAZgN/vp/RdngBU4a0VtWWRTFZ/lq6SsDwnCtuG9HpPOO/ZqNy6CROqQjOk5eok6ojca2Ko8w==}
+    dependencies:
+      '@wormery/utils': 1.0.1
+    dev: false
