@@ -1,5 +1,7 @@
 # 一个比较质感的卡片
 
+[重写前作者](https://www.bilibili.com/video/BV1RF411z7wQ?spm_id_from=333.999.0.0)
+
 ## 预览图
 
 ![](./doc/img/2022-05-15_14:05_1_select.png)
@@ -37,7 +39,7 @@
     <script src="./js/vue.global.js"></script>
     <!-- wormery.github.io/wtsc -->
     <!-- https://github.com/wormery/wtsc -->
-    <!-- 这是一个css in ts 的解决方案，在原生的html里并不好用，只是测试使用，查看是否能正常运行 -->
+    <!-- 这是我写的一个css in ts 的解决方案，在原生的html里并不好用，只是测试使用，查看是否能正常运行 -->
     <!-- iife代表全局暴露方式引入，vue的global也是iife格式暴露 -->
     <!-- 开发环境依赖 -->
     <!-- <script src="./js/wtsc.iife.js"></script> -->
@@ -48,6 +50,10 @@
 
     <script type="text/babel">
       const { createApp, h, ref, computed, defineComponent } = Vue;
+
+      //所有的标签会被babel解析为React.createElement()形似这样的函数，Vue中的h函数与createElement可以得到一样的参数，这样就生成了vue vnode
+      const React = { createElement: h };
+
       const { defWTSC, rgb, px, PE, vh, vw, s, em } = wtsc;
       const wt = defWTSC({});
 
@@ -94,7 +100,6 @@
 
       const w = wt.box;
       let borderRadiusSize = 15;
-      const React = { createElement: h };
       const cardBoxContentProps = {
         serialNumber: { type: String, defalult: "" },
         title: { type: String, default: "" },
