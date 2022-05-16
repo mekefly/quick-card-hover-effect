@@ -11,6 +11,8 @@
 
 ## Quick Start
 
+- 第一种:克隆仓库运行
+
 1. 克隆
    > get clone git@github.com:mekefly/quick-card-hover-effect.git
 2. 进入
@@ -20,9 +22,9 @@
 4. 运行 index.html
    浏览器打开或使用`live Server`vscode 插件运行
 
-## 源码
+- 第二种：方法直接复制源码放到 html 文件中运行便可
 
-注意：源码有依赖，不可以直接运行，如果你已经有了相关依赖也可以直接复制到对应文件夹里运行
+## 源码
 
 ```html
 <!DOCTYPE html>
@@ -34,19 +36,16 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- 处理jsx语法，这是一个运行时编译babel,真正的生产环境是不会这么用的 -->
-    <!-- https://www.babeljs.cn/ -->
-    <script src="./js/babel.min.js"></script>
+    <!-- 对代码进行编译为浏览器可识别的代码，这里使用了jsx -->
+    <!-- https://www.babeljs.cn -->
+    <script src="https://unpkg.com/@babel/standalone@7.17.11/babel.min.js"></script>
+    <!-- vue框架，著名的前端框架 -->
     <!-- https://v3.cn.vuejs.org/ -->
-    <script src="./js/vue.global.js"></script>
-    <!-- wormery.github.io/wtsc -->
-    <!-- https://github.com/wormery/wtsc -->
-    <!-- 这是我写的一个css in ts 的解决方案，在原生的html里并不好用，只是测试使用，查看是否能正常运行 -->
-    <!-- iife代表全局暴露方式引入，vue的global也是iife格式暴露 -->
-    <!-- 开发环境依赖 -->
-    <!-- <script src="./js/wtsc.iife.js"></script> -->
-    <!-- 最简生产环境依赖 -->
-    <script src="./js/wtsc.iife.prod.js"></script>
+    <script src="https://unpkg.com/vue@3.2.33/dist/vue.global.js"></script>
+    <!-- css in ts的一个解决方案 -->
+    <!-- https://wormery.github.io/wtsc/ -->
+    <script src="https://unpkg.com/@wormery/wtsc@2.0.0-bate.38/dist/wtsc.iife.js"></script>
+    <!-- <script src="https://unpkg.com/@wormery/wtsc@2.0.0-bate.38/dist/wtsc.iife.prod.js"></script> -->
 
     <div id="app"></div>
 
